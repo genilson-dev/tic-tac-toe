@@ -24,7 +24,19 @@ function start() {
     exibir()     
 }
 
-function exibir() { }
+function exibir() {
+    let tabela = `<table cellpadding="10" border="1">`;
+    for(let t = 0; t < 3; t++){
+        tabela += "<tr>"
+        tabela += "<td>1</td>"
+        tabela += "<td>2</td>"
+        tabela += "<td>3</td>"
+        tabela += "</tr>"
+    }
+    tabela += "<table>"
+    board.innerHTML = tabela
+    
+}
 
 function jogar() { }
 
